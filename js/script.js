@@ -62,4 +62,10 @@ bankAccount.prototype.amountWithdrow=function(withdrow){
         $(".balance").text(newAccount.balance);
         // $("#manage").unbind('submit');
         });
-        
+        $("form#withdraw").submit(function(event) {
+            event.preventDefault();
+            var newBalance = parseInt($("input#withdraw").val());
+            newAccount.withdraw(newBalance);
+            $(".balance").text(newAccount.balance);
+            });
+            });
