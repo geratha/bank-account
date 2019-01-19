@@ -2,19 +2,16 @@
 body{
     background-color:grey;
 }
-.login{
+.row{
         background: #fff;
         width: 80%;
         margin: auto;
-        padding: 40px;
-      
+        padding: 10px;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
         border-radius: 3px;
         background-color:honeydew;
 }
 p{
     background-color:sienna;
-}
-.login{
-    b
 }
 

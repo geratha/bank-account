@@ -1,30 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+<title>Bank account</title>
 </head>
 <body>
-    
+  <div class="container">
+      <h1>Bank account</h1>
+      <p>Ther is different transaction in bank like deposit,withdraw and ather activities. </p>
+      <hr/>
+      <div class="row">
+          <div class="name">
+              <form id="create">
+                <div class="form-group">
+                  <label for="name">Full name</label><br>
+                  <input id="name" type="text" required>
+                </div>
+                <div class="form-group">
+                  <label for="initial">Initial amount</label><br>
+                  <input id="initial" type="number" required>
+                </div>
+                <button type="click" class="btn btn-info">click</button>
+              </form>
+          </div>
+          <div class="deposit">
+            <form id="manage">
+              <div class="form-group">
+                <label for="deposit">Amount Deposit</label><br>
+                <input id="deposit" type="number" required>
+              </div>
+              <button type="click" class="btn btn-info">click</button>
+            </form>
+            <form id="withdraw">
+              <div class="withdraw">
+                <label for="withdraw">Amount Withdraw</label><br>
+                <input id="withdraw" type="number" required>
+              </div>
+              <button type="Click" class="btn btn-info">click</button>
+            </form>
+        </div>
+      </div>
+      <hr/>
+      <div class="account">
+        <div class="row">
+          <h3>Account Balance:</h2>
+          <h1 class="balance"></h1>
+        </div>
+      </div>
+  </div>
 </body>
 </html>
-    
-    <script src="js/script.js"></script>
-   
-    
-</head>
-<body>
-    <h1><strong>Bank account</strong></h1>
-    <p>In the bank ther is different activities like creation account,deposit money,withdrow money,credit transacion..</p> 
-    <h2>Login to your account</h2>
-        <div class="login">
-       <p> Filst name</p><br>
-                <label><input type="form" name="title"><br>
-<p>Second name</p><br>
-                <label><input type="form" name="title"><br>
-
-
-                   
+        <footer>
+            <p>email:kandenzi018@gmail.com/tel:0783124750</a></p>
+                </p>
+        </footer>
+        
+    </div>
+        <p></p>
+    </body>
+    </html>
