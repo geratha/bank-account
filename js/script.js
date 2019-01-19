@@ -45,4 +45,21 @@ bankAccount.prototype.amountWithdrow=function(withdrow){
 
     //user interface
     
+    $(document).ready(function() {
+        var newAccount = Object.create(BankAccount);
+        $("form#create").submit(function(event) {
+        event.preventDefault();
+        var inputtedName = $("input#name").val();
+        var inputtedBalance = parseInt($("input#initial").val());
+        newAccount.name = inputtedName;
+        newAccount.deposit(inputtedBalance);
+        $(".balance").text(newAccount.balance);
+        });
+        $("form#manage").submit(function(event) {
+        event.preventDefault();
+        var newBalance = parseInt($("input#deposit").val());
+        newAccount.deposit(newBalance);
+        $(".balance").text(newAccount.balance);
+        // $("#manage").unbind('submit');
+        });
         
