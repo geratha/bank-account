@@ -13,4 +13,6 @@ Bootstrap
 jQuery
 JavaScript
 
+## License
+MIT Licenc-copylight by geratha2019
 
