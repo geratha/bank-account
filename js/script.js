@@ -1,3 +1,5 @@
+//this is business logic
+
 var BankAccount = {
     balance: 0,
     withdraw: function(amount) {
@@ -6,6 +8,7 @@ var BankAccount = {
     deposit: function(amount) {
        this.balance = this.balance + amount;
     }
+    //this is user interface
     };
     $(document).ready(function() {
     var newAccount = Object.create(BankAccount);
